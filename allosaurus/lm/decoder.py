@@ -50,7 +50,7 @@ class PhoneDecoder:
             arg_max = np.argmax(logit)
 
             # this is an emitting frame
-            if arg_max != cur_max_arg and arg_max != 0:
+            if arg_max != cur_max_arg:
                 emit_frame_idx.append(i)
                 cur_max_arg = arg_max
 
